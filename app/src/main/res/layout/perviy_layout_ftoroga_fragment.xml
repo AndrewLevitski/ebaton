@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/контейнер_папа"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BD0D0D"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/вью_текст"
+        android:gravity="center"
+        android:layout_marginTop="59sp"
+        android:textColor="@color/teal_200"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/гиф_имаге"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/текст_подсказка"
+        app:layout_constraintBottom_toBottomOf="@id/контейнер_папа"
+        android:text="теперь можно нажать!!!"
+        android:textSize="51dp"
+        android:textColor="#1479A6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

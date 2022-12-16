@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/галавной_контейнер"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ГлавнаяАктивити">
+    <TextView
+        app:layout_constraintTop_toTopOf="@+id/галавной_контейнер"
+        android:text="На кнопку не нажимать!!!"
+        android:textColor="#008EFF"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="44dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/батон_виев"
+        android:layout_width="match_parent"
+        android:text="Стартуем"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintTop_toTopOf="@+id/галавной_контейнер"
+        app:layout_constraintBottom_toBottomOf="@+id/галавной_контейнер"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/айдищник_вьюхи"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/никому_не_нужный_текст"
+        app:layout_constraintBottom_toBottomOf="@+id/галавной_контейнер"
+        android:text="Вот и нахуйя ты это сделал?"
+        android:layout_width="match_parent"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="44dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
